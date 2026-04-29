@@ -20,22 +20,14 @@ export function PanelRight() {
             </div>
 
             {/* Photo Block */}
-            <div className="relative flex h-48 w-full items-center justify-center overflow-hidden border-b border-t border-white/10 bg-[#2a2a2a] text-xs uppercase tracking-widest text-white/20">
-                {/* Diagonal stripe pattern */}
-                <div
-                    className="absolute inset-0"
-                    style={{
-                        backgroundImage:
-                            "repeating-linear-gradient(45deg, transparent, transparent 12px, rgba(255, 255, 255, 0.03) 12px, rgba(255, 255, 255, 0.03) 24px)",
-                    }}
+            <div className="relative flex h-48 w-full items-center justify-center overflow-hidden border-b border-t border-white/10 bg-[#2a2a2a]">
+                <img
+                    src="https://images.pexels.com/photos/29708234/pexels-photo-29708234.jpeg"
+                    alt="E-Cell team and events"
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover"
                 />
-
-                <div className="relative z-10 flex flex-col items-center gap-1.5">
-                    <div className="flex h-9 w-9 items-center justify-center rounded border border-white/20 text-xs tracking-wider">
-                        PHOTO
-                    </div>
-                    <span>Team + Events Gallery</span>
-                </div>
             </div>
 
             {/* Socials Section */}
