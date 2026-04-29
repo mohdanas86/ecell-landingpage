@@ -1,43 +1,59 @@
-import { LuSparkle } from "react-icons/lu";
-import { Particles } from "../ui/Particles";
+import ImageSlider3D from "../ui/image-slider-3d";
 
 export function PanelCenter() {
+    const images = [
+        {
+            src: "https://images.unsplash.com/photo-1558008258-3256797b43f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvcnBvcmF0ZSUyMGV2ZW50fGVufDB8MHwwfHx8MA%3D%3D",
+            alt: "Corporate event 1",
+        },
+        {
+            src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            alt: "Corporate event 2",
+        },
+        {
+            src: "https://plus.unsplash.com/premium_photo-1661277712617-1e46eac647e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGNvcnBvcmF0ZSUyMGV2ZW50fGVufDB8MHwwfHx8MA%3D%3D",
+            alt: "Corporate event 3",
+        },
+        {
+            src: "https://plus.unsplash.com/premium_photo-1679547202671-f9dbbf466db4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGNvcnBvcmF0ZSUyMGV2ZW50fGVufDB8MHwwfHx8MA%3D%3D",
+            alt: "Corporate event 4",
+        },
+        {
+            src: "https://images.pexels.com/photos/29708234/pexels-photo-29708234.jpeg",
+            alt: "E-Cell event",
+        },
+    ];
+
     return (
-        <section className="flex flex-col items-center justify-center gap-[26px] border-l border-r border-white/5 px-8 py-[52px] reveal delay-2">
-            {/* Global Particles Background */}
-            <Particles
-                className="absolute inset-0 z-0"
-                quantity={250}
-                ease={30}
-                color="#fff"
-                refresh
-            />
-            {/* Logo Mark */}
-            <div className="relative flex h-48 w-48 items-center justify-center rounded-full border-2 border-white/10 bg-white/5">
-                {/* Inner dashed circle */}
-                <div className="absolute inset-3 rounded-full border border-dashed border-white/20" />
-
-                {/* Logo Letter */}
-                <span className="relative z-10 font-serif text-[8rem] italic leading-none text-[#f5f5f0] mb-6 rotate-6">
-                    e
+        <section className="relative flex flex-col items-center justify-center gap-6 border-l border-r border-white/5 px-8 py-[52px] reveal delay-2">
+            <div className="pointer-events-none absolute inset-0">
+                <span className="absolute left-6 top-10 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
+                    Incubation Cell
                 </span>
-
-                {/* Logo Burst Icon */}
-                <LuSparkle className="absolute bottom-15 right-13 h-7 w-7 text-[#c94f1e] z-20" />
+                <span className="absolute right-6 top-24 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
+                    Founder Mentorship
+                </span>
+                <span className="absolute bottom-16 left-10 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
+                    Rapid Prototyping
+                </span>
+                <span className="absolute bottom-20 right-12 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
+                    Demo Days
+                </span>
             </div>
 
-            {/* Logo Name */}
             <div className="text-center">
-                <div className="text-[2rem] font-bold uppercase tracking-widest text-[#f5f5f0]">
-                    SRM<span className="mx-1.5 text-white/30">|</span>
-                    <span className="font-normal text-[#8f8f8f]">e-cell</span>
-                </div>
-                <div className="mt-1.5 text-xs uppercase tracking-[0.18em] text-[#8f8f8f]">
-                    IST | Easwari | Dental | SEAD | S&H
-                </div>
-                <div className="mt-2.5 inline-block bg-[#f5f5f0] px-[14px] py-1.5 text-xs font-bold uppercase tracking-widest text-[#1a1a1a]">
-                    Chennai Ramapuram
-                </div>
+                <p className="text-xs uppercase tracking-[0.4em] text-white/50">
+                    Build. Mentor. Launch.
+                </p>
+            </div>
+
+            <div className="w-full max-w-[680px] h-[220px] sm:h-[260px] lg:h-[200px]">
+                <ImageSlider3D
+                    images={images.map((image) => image.src)}
+                    cardAspectRatio="16/9"
+                    cardWidth="clamp(160px, 24vw, 280px)"
+                    containerClassName="h-full"
+                />
             </div>
         </section>
     );
