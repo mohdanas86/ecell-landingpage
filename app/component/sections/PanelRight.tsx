@@ -1,4 +1,5 @@
 import { AnimatedSocialBeam } from "@/app/component/ui/AnimatedSocialBeam";
+import { CountUp } from "@/app/component/ui/count-up";
 import { Highlighter } from "@/components/ui/highlighter";
 
 export function PanelRight() {
@@ -34,19 +35,37 @@ export function PanelRight() {
                         <p className="text-xs uppercase tracking-[0.2em] text-white/50">
                             Teams
                         </p>
-                        <p className="text-lg font-semibold text-[#f5f5f0]">60+</p>
+                        <CountUp
+                            value={60}
+                            suffix="+"
+                            duration={2.4}
+                            className="justify-start"
+                            numberClassName="text-lg font-semibold text-[#fff]"
+                        />
                     </div>
                     <div>
                         <p className="text-xs uppercase tracking-[0.2em] text-white/50">
                             Mentors
                         </p>
-                        <p className="text-lg font-semibold text-[#f5f5f0]">25+</p>
+                        <CountUp
+                            value={25}
+                            suffix="+"
+                            duration={2}
+                            className="justify-start"
+                            numberClassName="text-lg font-semibold text-[#fff]"
+                        />
                     </div>
                     <div>
                         <p className="text-xs uppercase tracking-[0.2em] text-white/50">
                             Demos
                         </p>
-                        <p className="text-lg font-semibold text-[#f5f5f0]">12/yr</p>
+                        <CountUp
+                            value={12}
+                            suffix="/yr"
+                            duration={1.6}
+                            className="justify-start"
+                            numberClassName="text-lg font-semibold text-[#fff]"
+                        />
                     </div>
                 </div>
             </div>
