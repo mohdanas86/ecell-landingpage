@@ -1,3 +1,5 @@
+import { AnimatedSocialBeam } from "./component/ui/AnimatedSocialBeam";
+
 export default function Home() {
   return (
     <main className="brochure">
@@ -57,6 +59,7 @@ export default function Home() {
 
         <div className="socials-section">
           <h2 className="section-heading">Visit Our Socials</h2>
+          <AnimatedSocialBeam />
           <ul className="socials-list">
             <li>
               <div className="social-icon icon-ig">IG</div>
