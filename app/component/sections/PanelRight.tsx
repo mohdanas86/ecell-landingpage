@@ -3,10 +3,11 @@ import { Highlighter } from "@/components/ui/highlighter";
 
 export function PanelRight() {
     return (
-        <section className="flex flex-col overflow-hidden bg-[#1a1a1a] p-0 reveal delay-3">
+        <section className="relative flex flex-col overflow-hidden bg-[#1a1a1a] p-0 reveal delay-3">
+            <div className="pointer-events-none absolute -top-10 right-6 h-32 w-32 rounded-full bg-[#c94f1e]/15 blur-3xl" />
             {/* Advantages Section */}
-            <div className="border-b border-white/10 px-9 py-10">
-                <p className="mb-1.5 text-sm italic text-[#8f8f8f]">
+            <div className="border-b border-white/10 px-9 py-8">
+                <p className="mb-2 text-xs uppercase tracking-[0.3em] text-white/50">
                     Open from 09:00 to 18:30
                 </p>
                 <h2 className="mb-4 text-[2rem] font-bold leading-none text-[#f5f5f0]">
@@ -14,12 +15,40 @@ export function PanelRight() {
                         Our Advantages
                     </Highlighter>
                 </h2>
-                <p className="text-base leading-relaxed text-[#aaaaaa]">
-                    <strong className="text-[#f5f5f0] font-semibold">Idea to Production</strong> |{" "}
-                    <strong className="text-[#f5f5f0] font-semibold">Flexible Timings</strong> |{" "}
-                    <strong className="text-[#f5f5f0] font-semibold">Attendance Protection (OD)</strong> |{" "}
-                    <strong className="text-[#f5f5f0] font-semibold">Internship Opportunities</strong>
-                </p>
+                <div className="flex flex-wrap gap-2">
+                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
+                        Idea to Production
+                    </span>
+                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
+                        Flexible Timings
+                    </span>
+                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
+                        Attendance OD
+                    </span>
+                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
+                        Internships
+                    </span>
+                </div>
+                <div className="mt-6 grid grid-cols-3 gap-4 text-left">
+                    <div>
+                        <p className="text-xs uppercase tracking-[0.2em] text-white/50">
+                            Teams
+                        </p>
+                        <p className="text-lg font-semibold text-[#f5f5f0]">60+</p>
+                    </div>
+                    <div>
+                        <p className="text-xs uppercase tracking-[0.2em] text-white/50">
+                            Mentors
+                        </p>
+                        <p className="text-lg font-semibold text-[#f5f5f0]">25+</p>
+                    </div>
+                    <div>
+                        <p className="text-xs uppercase tracking-[0.2em] text-white/50">
+                            Demos
+                        </p>
+                        <p className="text-lg font-semibold text-[#f5f5f0]">12/yr</p>
+                    </div>
+                </div>
             </div>
 
             {/* Photo Block */}
@@ -31,6 +60,10 @@ export function PanelRight() {
                     decoding="async"
                     className="h-full w-full object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-tr from-black/50 via-transparent to-black/10" />
+                <div className="absolute bottom-3 left-4 rounded-full border border-white/10 bg-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/80 backdrop-blur">
+                    Campus Activation
+                </div>
             </div>
 
             {/* Socials Section */}
@@ -49,7 +82,7 @@ export function PanelRight() {
 
             {/* Tagline Banner */}
             <div className="mt-auto bg-[#111111] px-9 py-7">
-                <p className="font-[var(--font-bebas-neue),var(--font-barlow-condensed),sans-serif] text-[clamp(1.5rem,2.5vw,2.5rem)] font-normal uppercase tracking-wider leading-[0.95] text-[#f5f5f0]">
+                <p className="font-[var(--font-bebas-neue),var(--font-barlow-condensed),sans-serif] text-[clamp(1.5rem,2.5vw,2.2rem)] font-normal uppercase tracking-wider leading-[0.95] text-[#f5f5f0]">
                     Stay Ahead of Trends
                     <br />
                     and Technology

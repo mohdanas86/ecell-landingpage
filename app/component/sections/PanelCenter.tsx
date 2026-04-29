@@ -27,6 +27,11 @@ export function PanelCenter() {
     return (
         <section className="relative flex flex-col items-center justify-center gap-6 border-l border-r border-white/5 px-8 py-[52px] reveal delay-2">
             <div className="pointer-events-none absolute inset-0">
+                <div className="absolute left-1/2 top-6 h-40 w-40 -translate-x-1/2 rounded-full bg-[#c94f1e]/20 blur-3xl" />
+                <div className="absolute bottom-6 left-8 h-24 w-24 rounded-full bg-white/10 blur-2xl" />
+                <div className="absolute bottom-10 right-8 h-28 w-28 rounded-full bg-white/5 blur-2xl" />
+            </div>
+            <div className="pointer-events-none absolute inset-0">
                 <span className="absolute left-6 top-10 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
                     Incubation Cell
                 </span>
@@ -44,6 +49,9 @@ export function PanelCenter() {
             <div className="text-center">
                 <p className="text-xs uppercase tracking-[0.4em] text-white/50">
                     Build. Mentor. Launch.
+                </p>
+                <p className="mt-2 text-sm text-white/70">
+                    Incubation gallery of founders, teams, and demo days.
                 </p>
             </div>
 
