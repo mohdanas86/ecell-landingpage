@@ -70,7 +70,7 @@ export function AnimatedSocialBeam() {
 
     return (
         <div
-            className="relative flex h-[200px] w-full items-center justify-center overflow-hidden p-10"
+            className="relative flex h-[100px] w-full items-center justify-center overflow-hidden p-4"
             ref={containerRef}
         >
             {/* Animated Beams connecting to center - Rendered first to be behind */}
