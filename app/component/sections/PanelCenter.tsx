@@ -8,7 +8,7 @@ export function PanelCenter() {
             <Particles
                 className="absolute inset-0 z-0"
                 quantity={250}
-                ease={50}
+                ease={30}
                 color="#fff"
                 refresh
             />

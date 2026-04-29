@@ -1,4 +1,5 @@
 import { AnimatedSocialBeam } from "@/app/component/ui/AnimatedSocialBeam";
+import { Highlighter } from "@/components/ui/highlighter";
 
 export function PanelRight() {
     return (
@@ -9,7 +10,9 @@ export function PanelRight() {
                     Open from 09:00 to 18:30
                 </p>
                 <h2 className="mb-4 text-[2rem] font-bold leading-none text-[#f5f5f0]">
-                    Our Advantages
+                    <Highlighter action="highlight" color="rgba(255, 255, 255, 0.12)">
+                        Our Advantages
+                    </Highlighter>
                 </h2>
                 <p className="text-base leading-relaxed text-[#aaaaaa]">
                     <strong className="text-[#f5f5f0] font-semibold">Idea to Production</strong> |{" "}
@@ -33,7 +36,9 @@ export function PanelRight() {
             {/* Socials Section */}
             <div className="border-b border-white/10 px-9 py-7">
                 <h2 className="mb-[18px] text-[1.8rem] font-bold leading-none text-[#f5f5f0]">
-                    Visit Our Socials
+                    <Highlighter action="underline" color="#c94f1e">
+                        Visit Our Socials
+                    </Highlighter>
                 </h2>
 
                 {/* Animated Beam Component */}
