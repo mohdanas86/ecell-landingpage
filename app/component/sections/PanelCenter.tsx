@@ -25,23 +25,23 @@ export function PanelCenter() {
     ];
 
     return (
-        <section className="relative flex flex-col items-center justify-center gap-5 overflow-hidden border-l border-r border-white/5 px-6 py-[52px] sm:gap-6 sm:px-8 reveal delay-2">
-            <div className="pointer-events-none absolute inset-0">
-                <div className="absolute left-1/2 top-6 h-40 w-40 -translate-x-1/2 rounded-full bg-[#c94f1e]/20 blur-3xl" />
-                <div className="absolute bottom-6 left-8 h-24 w-24 rounded-full bg-white/10 blur-2xl" />
-                <div className="absolute bottom-10 right-8 h-28 w-28 rounded-full bg-white/5 blur-2xl" />
+        <section className="relative flex flex-col items-center justify-center gap-4 overflow-hidden px-3 py-6 sm:gap-6 sm:px-8 sm:py-[52px] lg:border-l lg:border-r lg:border-white/5 reveal delay-2">
+            <div className="pointer-events-none absolute inset-0 hidden sm:block">
+                <div className="absolute left-1/2 top-6 h-32 w-32 -translate-x-1/2 rounded-full bg-[#c94f1e]/20 blur-3xl sm:h-40 sm:w-40" />
+                <div className="absolute bottom-6 left-8 h-20 w-20 rounded-full bg-white/10 blur-2xl sm:h-24 sm:w-24" />
+                <div className="absolute bottom-10 right-8 h-24 w-24 rounded-full bg-white/5 blur-2xl sm:h-28 sm:w-28" />
             </div>
-            <div className="pointer-events-none absolute inset-0">
-                <span className="absolute left-6 top-10 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
+            <div className="pointer-events-none absolute inset-0 hidden sm:block">
+                <span className="absolute left-6 top-10 lg:left-10 lg:top-12 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
                     Incubation Cell
                 </span>
-                <span className="absolute right-6 top-24 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
+                <span className="absolute right-6 top-24 lg:right-10 lg:top-14 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
                     Founder Mentorship
                 </span>
-                <span className="absolute bottom-16 left-10 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
+                <span className="absolute bottom-16 left-10 lg:left-12 lg:bottom-14 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
                     Rapid Prototyping
                 </span>
-                <span className="absolute bottom-20 right-12 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
+                <span className="absolute bottom-20 right-12 lg:right-14 lg:bottom-10 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70 backdrop-blur">
                     Demo Days
                 </span>
             </div>
@@ -55,19 +55,18 @@ export function PanelCenter() {
                 </p>
             </div>
 
-            <div className="w-full max-w-[680px] h-[200px] sm:h-[230px] lg:h-[240px]">
+            <div className="w-full max-w-[680px] h-[180px] sm:h-[230px] lg:h-[240px]">
                 <ImageSlider3D
                     images={images.map((image) => image.src)}
                     cardAspectRatio="16/9"
-                    cardWidth="clamp(160px, 24vw, 280px)"
+                    cardWidth="clamp(120px, 58vw, 280px)"
                     containerClassName="h-full"
                 />
             </div>
 
-            <div className="w-full max-w-[620px] rounded-2xl border border-white/10 bg-white/5 px-6 py-6 text-center">
-                <p className="font-[var(--font-bebas-neue),var(--font-barlow-condensed),sans-serif] text-[clamp(1.4rem,2.4vw,2.2rem)] font-normal uppercase tracking-wider leading-[0.95] text-[#f5f5f0]">
+            <div className="w-full max-w-[620px] rounded-2xl border border-white/10 bg-white/5 py-6 text-center">
+                <p className="font-[var(--font-bebas-neue),var(--font-barlow-condensed),sans-serif] text-[clamp(1.4rem,2.4vw,2rem)] font-normal uppercase tracking-wider leading-[0.95] text-[#f5f5f0]">
                     Stay Ahead of Trends
-                    <br />
                     and Technology
                 </p>
             </div>

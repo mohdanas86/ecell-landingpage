@@ -82,6 +82,9 @@ export default function ImageSlider3D({
                         key={i}
                         src={src}
                         alt={`Slide ${i}`}
+                        loading={i === 0 ? "eager" : "lazy"}
+                        decoding="async"
+                        fetchPriority={i === 0 ? "high" : "low"}
                         className={`col-start-1 row-start-1 rounded-[1.5em] object-cover ${imageClassName}`}
                         style={{
                             width: cardWidth,

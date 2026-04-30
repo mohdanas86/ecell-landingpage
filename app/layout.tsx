@@ -52,7 +52,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${barlowCondensed.variable} ${crimsonPro.variable} ${bebasNeue.variable} h-full antialiased`}
     >
-      <body className="h-screen flex flex-col overflow-hidden ecell-body">
+      <body className="min-h-screen lg:h-screen flex flex-col overflow-y-auto lg:overflow-hidden ecell-body">
         {children}
         <footer className="mt-auto shrink-0 border-t border-white/10 px-6 py-4 text-xs text-white/70">
           <div className="flex flex-wrap items-center justify-between gap-2">

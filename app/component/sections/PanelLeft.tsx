@@ -27,7 +27,7 @@ export function PanelLeft() {
                 </p>
 
                 <h1 className="relative z-10 flex flex-col gap-0">
-                    <span className="font-[var(--font-bebas-neue),var(--font-barlow-condensed),sans-serif] text-[clamp(2.5rem,6vw,4.1rem)] font-normal tracking-wider leading-[0.9] text-[#f5f5f0] block">
+                    <span className="font-[var(--font-bebas-neue),var(--font-barlow-condensed),sans-serif] text-[clamp(2.4rem,5vw,3.5rem)] font-normal tracking-wider leading-[0.9] text-[#f5f5f0] block">
                         WELCOME  TO
                     </span>
                     <span className="font-[var(--font-bebas-neue),var(--font-barlow-condensed),sans-serif] text-[clamp(2.5rem,6vw,4.5rem)] font-normal tracking-wider leading-[0.9] text-[#c94f1e] block">
@@ -35,7 +35,7 @@ export function PanelLeft() {
                     </span>
                 </h1>
 
-                <p className="relative z-10 max-w-xs text-lg leading-relaxed italic text-[#e8e8e0]">
+                <p className="relative z-10 max-w-sm text-lg leading-relaxed italic text-[#e8e8e0]">
                     The E-Cell at SRM Ramapuram is a dedicated startup ecosystem built to
                     empower student and alumni founders. We provide incubation support,
                     mentorship, and guidance for hackathon teams to turn ideas into
