@@ -25,7 +25,7 @@ export function PanelCenter() {
     ];
 
     return (
-        <section className="relative flex flex-col items-center justify-center gap-6 border-l border-r border-white/5 px-8 py-[52px] reveal delay-2">
+        <section className="relative flex flex-col items-center justify-center gap-5 overflow-hidden border-l border-r border-white/5 px-6 py-[52px] sm:gap-6 sm:px-8 reveal delay-2">
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute left-1/2 top-6 h-40 w-40 -translate-x-1/2 rounded-full bg-[#c94f1e]/20 blur-3xl" />
                 <div className="absolute bottom-6 left-8 h-24 w-24 rounded-full bg-white/10 blur-2xl" />
@@ -55,13 +55,21 @@ export function PanelCenter() {
                 </p>
             </div>
 
-            <div className="w-full max-w-[680px] h-[220px] sm:h-[260px] lg:h-[200px]">
+            <div className="w-full max-w-[680px] h-[200px] sm:h-[230px] lg:h-[240px]">
                 <ImageSlider3D
                     images={images.map((image) => image.src)}
                     cardAspectRatio="16/9"
                     cardWidth="clamp(160px, 24vw, 280px)"
                     containerClassName="h-full"
                 />
+            </div>
+
+            <div className="w-full max-w-[620px] rounded-2xl border border-white/10 bg-white/5 px-6 py-6 text-center">
+                <p className="font-[var(--font-bebas-neue),var(--font-barlow-condensed),sans-serif] text-[clamp(1.4rem,2.4vw,2.2rem)] font-normal uppercase tracking-wider leading-[0.95] text-[#f5f5f0]">
+                    Stay Ahead of Trends
+                    <br />
+                    and Technology
+                </p>
             </div>
         </section>
     );

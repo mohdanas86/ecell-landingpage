@@ -17,18 +17,20 @@ export function PanelRight() {
                     </Highlighter>
                 </h2>
                 <div className="flex flex-wrap gap-2">
-                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
-                        Idea to Production
-                    </span>
-                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
-                        Flexible Timings
-                    </span>
-                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
-                        Attendance OD
-                    </span>
-                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
-                        Internships
-                    </span>
+                    <div className="flex flex-wrap gap-2">
+                        <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
+                            Idea to Production
+                        </span>
+                        <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
+                            Flexible Timings
+                        </span>
+                        <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
+                            Attendance OD
+                        </span>
+                        <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
+                            Internships
+                        </span>
+                    </div>
                 </div>
                 <div className="mt-6 grid grid-cols-3 gap-4 text-left">
                     <div>
@@ -71,7 +73,7 @@ export function PanelRight() {
             </div>
 
             {/* Photo Block */}
-            <div className="relative flex h-48 w-full items-center justify-center overflow-hidden border-b border-t border-white/10 bg-[#2a2a2a]">
+            <div className="relative flex h-52 w-full items-center justify-center overflow-hidden border-b border-t border-white/10 bg-[#2a2a2a]">
                 <img
                     src="https://images.pexels.com/photos/29708234/pexels-photo-29708234.jpeg"
                     alt="E-Cell team and events"
@@ -86,26 +88,16 @@ export function PanelRight() {
             </div>
 
             {/* Socials Section */}
-            <div className="border-b border-white/10 px-9 py-7">
-                <h2 className="mb-[18px] text-[1.8rem] font-bold leading-none text-[#f5f5f0]">
-                    <Highlighter action="underline" color="#c94f1e">
-                        Visit Our Socials
-                    </Highlighter>
+            <div className="mt-0 border-white/10 px-9 py-9">
+                <h2 className="mb-4 text-[2rem] font-bold leading-none text-[#f5f5f0]">
+                    <Highlighter action="underline" color="#FF9800">
+                        Connect with
+                    </Highlighter>{" "}
+                    us online
                 </h2>
-
-                {/* Animated Beam Component */}
-                <div>
+                <div className="overflow-hidden">
                     <AnimatedSocialBeam />
                 </div>
-            </div>
-
-            {/* Tagline Banner */}
-            <div className="mt-auto bg-[#111111] px-9 py-7">
-                <p className="font-[var(--font-bebas-neue),var(--font-barlow-condensed),sans-serif] text-[clamp(1.5rem,2.5vw,2.2rem)] font-normal uppercase tracking-wider leading-[0.95] text-[#f5f5f0]">
-                    Stay Ahead of Trends
-                    <br />
-                    and Technology
-                </p>
             </div>
         </section>
     );

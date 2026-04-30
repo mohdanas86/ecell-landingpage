@@ -55,10 +55,6 @@ export function PanelLeft() {
                 </div>
 
             </div>
-
-            <p className="relative z-10 border-t border-white/10 pt-6 text-sm italic text-[#8f8f8f]">
-                www.ecellrmp.srm.edu.in
-            </p>
         </section>
     );
 }
