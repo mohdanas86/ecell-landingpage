@@ -7,6 +7,7 @@ import {
   Geist_Mono,
 } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,15 +61,20 @@ export default function RootLayout({
               Copyright {new Date().getFullYear()} All rights reserved | E-Cell SRM Ramapuram
             </span>
             {/* <span aria-hidden="true">|</span> */}
-            <a
+            <Link
               href="https://www.ecellrmp.srm.edu.in"
+              target="_blank"
               className="text-white/80 transition hover:text-white"
             >
               www.ecellrmp.srm.edu.in
-            </a>
-            <span>
+            </Link>
+            <Link
+              href="https://anasalamportfolio.netlify.app"
+              target="_blank"
+              className="text-white/80 transition hover:text-white"
+            >
               Developed by Anas Alam
-            </span>
+            </Link>
           </div>
         </footer>
       </body>

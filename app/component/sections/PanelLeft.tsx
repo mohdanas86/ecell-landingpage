@@ -1,4 +1,7 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
+import { IoArrowForwardOutline } from "react-icons/io5";
 
 export function PanelLeft() {
     return (
@@ -22,9 +25,9 @@ export function PanelLeft() {
                     />
                 </div>
 
-                <p className="text-xs uppercase tracking-[0.35em] text-white/50">
+                {/* <p className="text-xs uppercase tracking-[0.35em] text-white/50">
                     Incubation Cell
-                </p>
+                </p> */}
 
                 <h1 className="relative z-10 flex flex-col gap-0">
                     <span className="font-[var(--font-bebas-neue),var(--font-barlow-condensed),sans-serif] text-[clamp(2.4rem,5vw,3.5rem)] font-normal tracking-wider leading-[0.9] text-[#f5f5f0] block">
@@ -42,7 +45,19 @@ export function PanelLeft() {
                     real-world ventures.
                 </p>
 
-                <div className="flex flex-wrap gap-2">
+                <div>
+                    <Link href="https://www.ecellrmp.srm.edu.in" target="_blank">
+                        <Button
+                            className="rounded-full border border-white/10 bg-white/5 px-12 py-2 text-[14px] uppercase tracking-[0.2em] text-white/70 hover:bg-white/10 focus-visible:bg-white/10 transition-colors hover:scale-[1.02] focus-visible:scale-[1.02] active:scale-100 hover:shadow-sm hover:shadow-gray/90 duration-300 cursor-pointer"
+                        >
+
+                            <span>Join Us</span>
+                            <IoArrowForwardOutline />
+                        </Button>
+                    </Link>
+                </div>
+
+                {/* <div className="flex flex-wrap gap-2">
                     <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
                         Mentorship
                     </span>
@@ -52,9 +67,9 @@ export function PanelLeft() {
                     <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/70">
                         Demo Days
                     </span>
-                </div>
+                </div> */}
 
             </div>
-        </section>
+        </section >
     );
 }

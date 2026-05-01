@@ -1,7 +1,13 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { animate, motion, useMotionValue, useTransform } from "framer-motion";
+import {
+    animate,
+    cubicBezier,
+    motion,
+    useMotionValue,
+    useTransform,
+} from "framer-motion";
 import { cn } from "@/app/lib/utils";
 
 const formatValue = (val: number, precision: number, sep: string): string => {
@@ -27,10 +33,10 @@ export interface CountUpProps {
 }
 
 const easingFunctions = {
-    linear: [0, 0, 1, 1],
-    easeIn: [0.42, 0, 1, 1],
-    easeOut: [0, 0, 0.58, 1],
-    easeInOut: [0.42, 0, 0.58, 1],
+    linear: cubicBezier(0, 0, 1, 1),
+    easeIn: cubicBezier(0.42, 0, 1, 1),
+    easeOut: cubicBezier(0, 0, 0.58, 1),
+    easeInOut: cubicBezier(0.42, 0, 0.58, 1),
 };
 
 const animationStyles = {
